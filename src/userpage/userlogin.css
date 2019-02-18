@@ -1,0 +1,11 @@
+.loginpage
+
+   {
+       width: 60%;
+       margin: auto;
+       border: 1px solid rgb(238, 238, 238);
+       box-shadow: 0 2px 3px  rgb(52, 52, 206);
+       margin-top: 40%;
+       padding: 16px;
+
+   }
