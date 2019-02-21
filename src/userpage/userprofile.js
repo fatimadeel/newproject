@@ -9,13 +9,11 @@ class Profile extends Component {
     render() {
         return (
             <div className ="profilepage">
-                  <img src = {require('../profile.jpg')} alt="Profile img"/>
+                  <img src = {require('./profile.jpg')} alt="Profile img"/>
                  
                  <Posts project={"hello world"}/>
                  <Posts/>
              
-                
-
             </div>)
     }
 }

@@ -12,29 +12,28 @@
 
    button 
    {
-    width: 50%;
-    margin-left: 20%;
-    font-family: inherit;
-    color: white;
-    background: rgb(102, 182, 228);
-    outline: none;
-    border: none;
-    padding: 5px 15px;
-    font-size: 1em;
-    font-weight: 300;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
-    cursor: pointer;
-    transition: all 0.15s ease-in-out;
-
+   width: 50%;
+   margin-bottom: 30px;
+   margin-left: 45%;
+   transform: translate(-50%, 0);
+   font-family: inherit;
+   color: white;
+   background: rgb(65, 175, 238);
+   outline: none;
+   border: none;
+   padding: 5px 15px;
+   font-size: 1em;
+   font-weight: 300;
+   border-radius: 3px;
+   box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+   cursor: pointer;
+   transition: all 0.15s ease-in-out;
+   
    }
 
 
    button:hover {
-    background: #23d3d3;
+    background: #5dd5eb;
     }
 
-   input
-   {
-    width: 50%;
-   }
+  

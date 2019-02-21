@@ -4,6 +4,9 @@ import './App.css';
 import Logga from './userpage/userlogin';
 import Profile from './userpage/userprofile';
 
+// import img from './Header.png';
+// import img1 from './footer.png';
+
 
 class App extends Component {
 
@@ -28,6 +31,7 @@ class App extends Component {
                 :
                 <Logga doLogin={this.dologinhandler}/>
             }
+
            <img src = {require('./footer.png')} alt="Footer img"/>
            </div>
     );
