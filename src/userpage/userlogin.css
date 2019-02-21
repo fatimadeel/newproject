@@ -1,7 +1,7 @@
 .loginpage
 
    {
-       width: 30%;
+       width: 25%;
        margin: auto;
        border: 5px solid rgb(238, 238, 238);
        box-shadow: 0 2px 3px  rgb(40, 90, 182);
@@ -13,7 +13,7 @@
    button 
    {
     width: 50%;
-    margin-left: 16%;
+    margin-left: 20%;
    }
 
    input
