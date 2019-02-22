@@ -41,7 +41,7 @@ class Logga extends Component {
 
                     <button type="submit" value="submit">Logga in</button>
                 </form>
-                <p>------------------------------------ eller ----------------------------------</p>
+                <p>----------------------------- eller ------------------------------</p>
                 <button onClick={this.loggaInHandler}>Skapa nytt konto</button>
             </div>)
 

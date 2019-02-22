@@ -1,69 +1,51 @@
 import React from 'react';
 import './Posts.css'
 
+
 export const Posts = (props) => {
     return (
+
         <div class="container">
-            <div class="col-md-5">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <section class="post-heading">
-                            <div class="row">
-                                <div class="col-md-11">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            {/* <a href="#">
-                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="40" height="40" alt="..."/>
-                                </a> */}
-                                        </div>
-                                        <div class="media-body">
-
-                                            <a href="#" class="anchor-time">51 mins</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <a href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="post-body">
-                            <p>Hej !!</p>
-                        </section>
-                        <section class="post-footer">
-                            <hr />
-                            <div class="post-footer-option container">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i> Like</a></li>
-                                    <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Comment</a></li>
-                                    <li><a href="#"><i class="glyphicon glyphicon-share-alt"></i> Share</a></li>
-                                </ul>
-                            </div>
-                            <div class="post-footer-comment-wrapper">
-                                <div class="comment-form">
-
-                                </div>
-                                <div class="comment">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            {/* <a href="#">
-                                  <img class="media-object photo-profile" src="http://0.gravatar.com/avatar/38d618563e55e6082adf4c8f8c13f3e4?s=40&d=mm&r=g" width="32" height="32" alt="..."/>
-                                </a> */}
-                                        </div>
-                                        <div class="media-body">
-                                            <a class="anchor-time">51 mins</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+            <div class="row">
+                <div class="[ col-xs-12 col-sm-offset-1 col-sm-5 ]">
+                    <div class="[ panel panel-default ] panel-google-plus">
+                        <div class="dropdown">
+                            {/* <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="[ glyphicon glyphicon-chevron-down ]"></span>
+                            </span> */}
+                            {/* <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            </ul> */}
+                        </div>
+                        {/* <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#Millennials</li>
+                                <li>#Generation</li>
+                            </ul>
+                        </div> */}
+                        <div class="panel-heading">
+                            {/* <img class="[ img-circle pull-left ]" src="https://lh3.googleusercontent.com/-CxXg7_7ylq4/AAAAAAAAAAI/AAAAAAAAAQ8/LhCIKQC5Aq4/s46-c-k-no/photo.jpg" alt="Mouse0270" /> */}
+                            <h3>{props.header} </h3>
+                            <h5><span>Shared publicly</span> - <span>{props.time}</span> </h5>
+                        </div>
+                        <div class="panel-body">
+                            <p>{props.body}</p>
+                        </div>
+                        {/* <div class="panel-footer">
+                            <button type="button" class="[ btn btn-default ]">+1</button>
+                            <button type="button" class="[ btn btn-default ]">
+                                <span class="[ glyphicon glyphicon-share-alt ]"></span>
+                            </button>
+                            <div class="input-placeholder">Add a comment...</div>
+                        </div> */}
                     </div>
-        </div>   
-	</div>
-</div>
-
-
+                </div>
+            </div>
+        </div>
     )
 
 }

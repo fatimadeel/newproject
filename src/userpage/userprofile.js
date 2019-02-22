@@ -3,19 +3,34 @@ import React, { Component } from 'react';
 //import img from './profile.jpg';
 import './userprofile.css';
 import { Posts } from './Posts';
+import Comments from './Comment';
+
 
 class Profile extends Component {
 
+        state = 
+            {
+                postfeedback: [
+                    {header: "John", body: "I ate lunch!", time: "50 mins" },
+                    {header: "Charlie", body: "Something happened!", time: "25 mins" },
+                    {header: "Charlott", body: "I am great!", time: "5 mins" }
+                ]
+            }
+    
     render() {
         return (
             <div className ="profilepage">
                   <img src = {require('./profile.jpg')} alt="Profile img"/>
-                 
-                 <Posts project={"hello world"}/>
-                 <Posts/>
-             
-            </div>)
-    }
+                  <div>
+
+                  {this.state.postfeedback.map  (post => {
+                      return <Posts header={post.header}
+                              body={post.body}
+                              time={post.time}/>})}         
+                  </div>  
+                  <Comments />
+            </div>
+         ) }
 }
 
 export default Profile;
