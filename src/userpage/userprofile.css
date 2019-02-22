@@ -1,6 +1,13 @@
 .profilepage img
-
     {
         margin-left: 10%; 
-        margin-top: 1%;     
+         margin-top: -3%;      
+    }
+
+.profilepage .logout
+    {
+        margin-left: 85%; 
+        margin-top: 1%; 
+        /* margin-bottom: 1%;  */
+        width:   10%;  
     }

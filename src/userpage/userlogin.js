@@ -4,12 +4,6 @@ import './userlogin.css';
 
 class Logga extends Component {
    
-
-    // eref = React.createRef();
-    // pref = React.createRef();
-
-
-
      loggaInHandler = function (e)
       {
         e.preventDefault();
@@ -41,7 +35,7 @@ class Logga extends Component {
 
                     <button type="submit" value="submit">Logga in</button>
                 </form>
-                <p>----------------------------- eller ------------------------------</p>
+                <p>---------------------- eller -----------------------</p>
                 <button onClick={this.loggaInHandler}>Skapa nytt konto</button>
             </div>)
 
