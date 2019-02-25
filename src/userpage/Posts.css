@@ -59,11 +59,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
     resize: vertical;
 }
- .panel-google-plus-textarea > .btn {
-    margin-top: 10px;
-    margin-right: 10px;
-    /* margin-left: 24%; */
-    width: 10%;
+ .panel-google-plus-textarea > .button {
+  
+    margin-left: 40%;
+    margin-top: 1%;
+    width: 10%; 
+    
     
 }
 /* @media (min-width: 25px) {
