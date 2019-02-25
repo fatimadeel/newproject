@@ -10,7 +10,7 @@ import Comments from './Comment';
 
 class Profile extends Component {
 
-    // States for posts 
+    // ...... States for posts ...........
         state = 
             {
                 postfeedback: [
@@ -20,10 +20,12 @@ class Profile extends Component {
                 ]
             }
 
+    // ....... BOTH MOHAMMAD's HELPED (POST COMMENT - Function ).............
             doPosthandler = (vary) => {
-            // New copy of array at new address
+
+                // New copy of array at new address
                 let tempPostfeedback = [...this.state.postfeedback];
-                tempPostfeedback.push ({id:20, header: "Fatima", body: vary, time: "Just now" });
+                tempPostfeedback.push ({id:Math.random(), header: "Fatima", body: vary, time: "Just now" });
                 this.setState({
                     postfeedback: tempPostfeedback
                 })
@@ -33,13 +35,13 @@ class Profile extends Component {
     render() {
         return (
             <div className ="profilepage">
-            {/* Logout button */}
+            {/* ......... Logout button ............ */}
                   <button className="logout" type="submit" value="submit" onClick={this.props.doLogout.bind(this)}>LogOut</button>
 
-            {/* Profile banner */}
+            {/* .......... Profile banner ............ */}
                   <img src = {require('./profile.jpg')} alt="Profile img"/>
 
-            {/* Show posts */} 
+            {/* ............. Show hardcoded posts ............... */} 
                   <div>
                   {this.state.postfeedback.map (post => {
                       return <Posts 
@@ -48,7 +50,7 @@ class Profile extends Component {
                               body={post.body}
                               time={post.time}/>})}         
                   </div> 
-            {/* Record new comment */}  
+            {/* ............ Record new comment ............ */}  
                  <Comments doPost={this.doPosthandler}/> />
             </div>
          ) }

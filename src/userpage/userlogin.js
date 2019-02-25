@@ -4,10 +4,10 @@ import './userlogin.css';
 
 class Logga extends Component {
    
+    
      loggaInHandler = function (e)
       {
         e.preventDefault();
-        console.log(this.emailval.value);
 
         if ((this.emailval.value) === "fatima@gmail.com" && (this.passval.value) === "fatima")
         {
@@ -16,8 +16,8 @@ class Logga extends Component {
 
         } else 
             {
-           return false;
-        }
+           return alert('Incorrect credentials entered.');
+           }
         }
 
 
@@ -31,11 +31,11 @@ class Logga extends Component {
 
                     <label htmlFor="password">Password:&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" name="password" id="password" ref={(pref) => this.passval = pref } /> <br/><br/>
-                    {/* <input type="text" name="password" id="password" onChange={this.handleChange} /> <br /><br /> */}
+        
 
                     <button type="submit" value="submit">Logga in</button>
                 </form>
-                <p>---------------------- eller -----------------------</p>
+                <p>-------------------- eller ---------------------</p>
                 <button onClick={this.loggaInHandler}>Skapa nytt konto</button>
             </div>)
 

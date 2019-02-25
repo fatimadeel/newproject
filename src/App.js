@@ -27,20 +27,23 @@ class App extends Component {
 
     return (
            <div>
+           {/* .......... Display header .......... */}
            <img src = {require('./Header.png')} alt="Header img"/>
-           
+
+            {/* .......... Login Page / navigate to component 'Profile' if logged in successfully ............ */}
             { this.state.loginp ? 
-            // if(loginp === true) printout or show the profile screen by rendering <Profile>  
+                // if(loginp === true) printout or show the profile screen by rendering <Profile>  
                 <Profile doLogout={this.dologouthandler}/>            
                 :
-
                 // else printout or show the profile screen by rendering <Logga> 
                 <Logga doLogin={this.dologinhandler}/>
             }
 
+           {/* ............ Display footer ............. */}
            <img src = {require('./footer.png')} alt="Footer img"/>
            </div>
     );
+    
   }
 }
 
